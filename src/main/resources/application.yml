@@ -1,0 +1,34 @@
+server:
+  port: 6060
+
+
+spring:
+  datasource:
+    username: root
+    password: Roua@th123
+    url: jdbc:mysql://localhost:3306/decision_Making
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+      file-size-threshold: 2KB
+
+  mail:
+    host: smtp.example.com
+    port: 587
+    username: roua.thabet.21@gmail.com
+    password: Roua@th123
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
